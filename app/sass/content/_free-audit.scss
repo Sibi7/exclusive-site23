@@ -1,0 +1,89 @@
+.free-audit {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 500px;
+  background: url("../img/free-audit-bg.png") no-repeat;
+  background-size: cover;
+  background-position: left, right;
+  background-attachment: fixed;
+  &__content {
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    &__form {
+      display: block;
+      position: relative;
+      float: left;
+      width: 50%;
+      padding-left: 55px;
+      box-sizing: border-box;
+      h1 {
+        color: #001121;
+        font-family: $bebasBold;
+        font-size: 55px;
+        font-weight: 400;
+        line-height: 80px;
+        text-transform: uppercase;
+        margin-top: 100px;
+      }
+      p {
+        color: #001121;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 22px;
+        margin-bottom: 37px;
+      }
+      input {
+        width: 284px;
+        height: 50px;
+        box-shadow: 17px 22px 57px rgba(0, 0, 0, 0.3);
+        border-radius: 25px;
+        border: 1px solid #ff5038;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        display: block;
+        float: left;
+        padding-left: 25px;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: italic;
+        &::placeholder{
+          opacity: 1;
+        }
+      }
+      button {
+        width: 210px;
+        height: 50px;
+        box-shadow: 17px 22px 57px rgba(0, 0, 0, 0.3);
+        border-radius: 25px;
+        background-color: #ff5038;
+        border: none;
+        color: #fff;
+        font-size: 15px;
+        display: block;
+        cursor: pointer;
+        float: left;
+        margin-left: 15px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+    }
+    &__absolute {
+      display: block;
+      position: relative;
+      float: left;
+      width: 50%;
+      &__img {
+        display: block;
+        position: absolute;
+        float: left;
+        width: 100%;
+        top: -17px;
+      }
+    }
+  }
+}

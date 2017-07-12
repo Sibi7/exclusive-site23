@@ -1,0 +1,23 @@
+.double-title{
+  margin-left: 100px;
+  color: #001121;
+  font-family: $bebasBold;
+  font-size: 53px;
+  display: block;
+  font-weight: 400;
+  float: left;
+  line-height: 94px;
+  &:before{
+    content: 'За нас говорят';
+    opacity: 0.22;
+    margin-left: 100px;
+    color: #001121;
+    font-family: $bebasBold;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 94px;
+    position: absolute;
+    top: 9px;
+    left: -103px;
+  }
+}

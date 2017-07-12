@@ -1,0 +1,55 @@
+.header{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/header-bg.png") no-repeat center top;
+  background-size: cover;
+  &__navigation{
+    display: block;
+    position: relative;
+    float: right;
+    ul{
+      padding: 0;
+      li{
+        list-style: none;
+        display: inline-block;
+        a{
+          color: #fff;
+          display: inline-block;
+          margin-left: 60px;
+          font-size: 14px;
+          font-weight: 500;
+          text-transform: uppercase;
+          transition: .2s;
+          &:hover{
+            color: #ff5038;
+            transition: .2s;
+          }
+        }
+        .menu{
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+  &__absolute{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 250px;
+    background: url("../img/cloud.png") repeat;
+    background-size: cover;
+    z-index: 5;
+  }
+  &__absolute2{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 250px;
+    background: url("../img/cloud2.png") repeat;
+    background-size: cover;
+    z-index: 4;
+  }
+}
