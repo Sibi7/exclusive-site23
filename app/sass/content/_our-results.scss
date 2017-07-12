@@ -66,5 +66,14 @@
         }
       }
     }
+    .left{
+      animation-delay: .3s;
+    }
+    .center{
+      animation-delay: .5s;
+    }
+    .right{
+      animation-delay: .7s;
+    };
   }
 }
