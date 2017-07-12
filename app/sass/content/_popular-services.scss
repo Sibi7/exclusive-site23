@@ -41,8 +41,9 @@
       display: block;
       float: left;
       width: 689px;
-      margin-top: 45px;
+      margin-top: 70px;
       margin-left: 25px;
+      margin-bottom: 0;
     }
   }
   &__body{
@@ -57,6 +58,7 @@
       float: left;
       height: 200px;
       padding: 20px;
+      margin-bottom: 45px;
       box-sizing: border-box;
       img{
         display: block;
@@ -94,6 +96,11 @@
         border: 2px solid #000;
         text-align: center;
         color: #000;
+        &:hover{
+          color: #ff5038;
+          transition: .2s;
+          border: 2px solid #ff5038;
+        }
         i{
           display: inline-block;
           position: absolute;
@@ -104,22 +111,14 @@
       }
     }
     .animate1{
-      animation-delay: .1s;
-    }
-    .animate2{
       animation-delay: .2s;
     }
-    .animate3{
-      animation-delay: .3s;
-    }
-    .animate4{
+    .animate2{
       animation-delay: .4s;
     }
-    .animate5{
-      animation-delay: .5s;
-    }
-    .animate6{
+    .animate3{
       animation-delay: .6s;
     }
+
   }
 }
