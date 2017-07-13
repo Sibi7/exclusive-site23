@@ -115,5 +115,10 @@
     padding-bottom: 70px;
     padding-top: 70px;
     transition-delay: .8s;
+    img{
+      height: 100%;
+      object-fit: contain;
+      width: 100%;
+    }
   }
 }
