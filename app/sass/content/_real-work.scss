@@ -100,9 +100,6 @@
           line-height: 20px;
           text-transform: uppercase;
           cursor: pointer;
-          &:hover{
-            background: rgba(255, 80, 56, 1);
-          }
         }
       }
       &:hover &__description{
