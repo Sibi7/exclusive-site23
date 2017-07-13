@@ -6,6 +6,18 @@
   height: 100vh;
   background: url("../img/header-bg.png") no-repeat center top;
   background-size: cover;
+  &__absolute-top{
+    position: absolute;
+    display: block;
+    float: left;
+    width: 250px;
+    left: 31%;
+    top: 35%;
+    img{
+      width: 100%;
+      object-fit: contain;
+    }
+  }
   &__navigation{
     display: block;
     position: relative;

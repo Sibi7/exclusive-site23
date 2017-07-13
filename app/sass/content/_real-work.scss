@@ -1,66 +1,67 @@
-.real-work{
+.real-work {
   display: block;
   position: relative;
   float: left;
   width: 100%;
   background: #fff;
- &__header{
-   display: block;
-   position: relative;
-   float: left;
-   width: 100%;
-   padding-top: 80px;
-   h2{
-     margin-left: 100px;
-     color: #001121;
-     font-family: $bebasBold;
-     font-size: 53px;
-     display: block;
-     font-weight: 400;
-     float: left;
-     line-height: 94px;
-     &:before{
-       content: 'реальные';
-       opacity: 0.22;
-       margin-left: 100px;
-       color: #001121;
-       font-family: $bebasBold;
-       font-size: 72px;
-       font-weight: 400;
-       line-height: 94px;
-       position: absolute;
-       top: 89px;
-       left: -103px;
-     }
-   }
-   p {
-     color: #001121;
-     font-size: 17px;
-     font-weight: 400;
-     line-height: 22px;
-     margin-bottom: 0;
-     display: block;
-     float: left;
-     width: 689px;
-     margin-top: 70px;
-     margin-left: 25px;
-   }
- }
-  &__wrapper{
+  &__header {
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-top: 80px;
+    h2 {
+      margin-left: 100px;
+      color: #001121;
+      font-family: $bebasBold;
+      font-size: 53px;
+      display: block;
+      font-weight: 400;
+      float: left;
+      line-height: 94px;
+      margin-top: 0;
+      &:before {
+        content: 'реальные';
+        opacity: 0.22;
+        margin-left: 100px;
+        color: #001121;
+        font-family: $bebasBold;
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 94px;
+        position: absolute;
+        top: 50px;
+        left: -103px;
+      }
+    }
+    p {
+      color: #001121;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 22px;
+      margin-bottom: 0;
+      display: block;
+      float: left;
+      width: 689px;
+      margin-top: 30px;
+      margin-left: 25px;
+    }
+  }
+  &__wrapper {
     display: block;
     position: relative;
     float: right;
     width: 75%;
-    &__portfolio{
+    &__portfolio {
       display: block;
       position: relative;
       float: right;
-      img{
+      img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
-      &__description{
+      &__description {
         position: absolute;
         display: block;
         opacity: 0;
@@ -70,7 +71,7 @@
         text-align: center;
         top: 50%;
         background: rgba(255, 80, 56, .9);
-        h3{
+        h3 {
           text-align: center;
           margin-top: 25%;
           color: #ffffff;
@@ -78,7 +79,7 @@
           font-weight: 700;
           text-transform: uppercase;
         }
-        p{
+        p {
           color: #ffffff;
           font-size: 15px;
           font-weight: 300;
@@ -88,7 +89,7 @@
           width: 280px;
           margin: 30px auto;
         }
-        button{
+        button {
           width: 163px;
           height: 33px;
           border-radius: 10px;
@@ -102,20 +103,20 @@
           cursor: pointer;
         }
       }
-      &:hover &__description{
+      &:hover &__description {
         opacity: 1;
         transition: .6s;
       }
     }
   }
-  &__company{
+  &__company {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-bottom: 70px;
-    padding-top: 70px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     transition-delay: .8s;
-    img{
+    img {
       height: 100%;
       object-fit: contain;
       width: 100%;
