@@ -33,12 +33,12 @@ $(document).ready(function () {
         loop: true,
         margin: 0,
         nav: true,
-        navText: true,
+        navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
         navigation: true,
         navigationText: true,
         pagination: true,
-        // autoplay: true,
-        // autoplayTimeout: 5000,
+        autoplay: true,
+        autoplayTimeout: 5000,
         items: 3,
         dots: true,
         // singleItem: false,
@@ -77,19 +77,13 @@ $(document).ready(function () {
 //    scroll menu
     $(document).ready(function(){
         $("#menu").on("click","a", function (event) {
-            //отменяем стандартную обработку нажатия по ссылке
             event.preventDefault();
-
-            //забираем идентификатор бока с атрибута href
             var id  = $(this).attr('href'),
-
-                //узнаем высоту от начала страницы до блока на который ссылается якорь
                 top = $(id).offset().top;
-
-            //анимируем переход на расстояние - top за 1500 мс
             $('body,html').animate({scrollTop: top}, 1500);
         });
     });
+    //parallax mouse element
     var b = document.getElementsByClassName("footer__absolute-top")[0];
 
     b.addEventListener("mousemove", function(event) {
