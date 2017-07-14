@@ -1,4 +1,4 @@
-.header{
+.header {
   display: block;
   position: relative;
   float: left;
@@ -6,28 +6,38 @@
   height: 100vh;
   background: url("../img/header-bg.png") no-repeat center top;
   background-size: cover;
-  &__absolute-top{
+ @include breakpoint(max-width 770px){
+   background: url("../img/mobile-header-bg.png") no-repeat center top;
+   background-size: cover;
+
+ }
+  &__absolute-top {
     position: absolute;
     display: block;
     float: left;
     width: 250px;
-    left: 31%;
+    transition: .3s;
+    left: 33%;
     top: 35%;
-    img{
+    img {
       width: 100%;
       object-fit: contain;
+      transition: .3s;
+    }
+    @include breakpoint(max-width 770px){
+      display: none;
     }
   }
-  &__navigation{
+  &__navigation {
     display: block;
     position: relative;
     float: right;
-    ul{
+    ul {
       padding: 0;
-      li{
+      li {
         list-style: none;
         display: inline-block;
-        a{
+        a {
           color: #fff;
           display: inline-block;
           margin-left: 60px;
@@ -35,18 +45,18 @@
           font-weight: 500;
           text-transform: uppercase;
           transition: .2s;
-          &:hover{
+          &:hover {
             color: #ff5038;
             transition: .2s;
           }
         }
-        .menu{
+        .menu {
           margin-left: 50px;
         }
       }
     }
   }
-  &__absolute{
+  &__absolute {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -54,8 +64,11 @@
     background: url("../img/cloud.png") repeat;
     background-size: cover;
     z-index: 5;
+    @include breakpoint(max-width 770px){
+      display: none;
+    }
   }
-  &__absolute2{
+  &__absolute2 {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -63,5 +76,55 @@
     background: url("../img/cloud2.png") repeat;
     background-size: cover;
     z-index: 4;
+    @include breakpoint(max-width 770px){
+      display: none;
+    }
+  }
+  .menu-link {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .4);
+    position: fixed;
+    right: 12px;
+    z-index: 15;
+    top: 30px;
+    @include breakpoint(max-width 770px) {
+      display: block;
+    }
+    span, span:before, span:after {
+      display: block;
+      height: 2px;
+      width: 18px;
+      background-color: #222;
+      position: absolute;
+      left: 50%;
+      margin-left: -9px;
+      top: 50%;
+      margin-top: -1px;
+    }
+    span:before {
+      transition: all 0.2s;
+      margin-top: -6px;
+      content: '';
+    }
+    span:after {
+      transition: all 0.2s;
+      margin-top: 4px;
+      content: '';
+    }
+    &_active span {
+      background-color: transparent;
+      &:before {
+        transform: rotate(135deg);
+        margin-top: 0;
+      }
+      &:after {
+        transform: rotate(-134deg);
+        margin-top: 0;
+      }
+    }
   }
 }

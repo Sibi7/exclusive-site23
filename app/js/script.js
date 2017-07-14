@@ -97,7 +97,36 @@ $(document).ready(function () {
         var x = document.getElementsByClassName("footer__absolute-top");
         var i;
         for (i = 0; i < x.length; i++) {
+            x[i].style.transform = 'translate(' + amountMovedX + 'px,' + amountMovedY + 'px)'
+        }
+    }
+    //parallax mouse element top
+    var a = document.getElementsByClassName("header__absolute-top")[0];
+    a.addEventListener("mousemove", function(event) {
+        parallaxedTop(event);
+
+    });
+
+    function parallaxedTop(e) {
+        var amountMovedX = (e.clientX * -0.4 / 8);
+        var amountMovedY = (e.clientY * -0.4 / 8);
+        var x = document.getElementsByClassName("header__absolute-top");
+        var i;
+        for (i = 0; i < x.length; i++) {
             x[i].style.transform='translate(' + amountMovedX + 'px,' + amountMovedY + 'px)'
         }
     }
+//hamburger-menu
+    $(document).ready(function () {
+        var link =$('.menu-link');
+        var link_active = $('.menu-link_active');
+
+        link.click(function () {
+            link.toggleClass('menu-link_active');
+        })
+    });
+    $( ".menu-link" ).click(function() {
+        $( ".header__nav__menu" ).slideToggle( "slow", function() {
+        });
+    });
 });
