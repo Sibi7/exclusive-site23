@@ -97,6 +97,111 @@
     float: none;
     text-align: center;
   }
+  .real-work__header {
+    padding-top: 0;
+  }
+  .real-work__header h2 {
+    margin-left: 0;
+    line-height: inherit;
+    margin-top: 70px;
+  }
+  .real-work__header h2:before {
+    top: 0;
+  }
+  .real-work__header p {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+  .real-work__wrapper, .real-work__wrapper__portfolio {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .real-work .owl-nav {
+    display: none;
+  }
+  .real-work__company {
+    display: block;
+    width: 100%;
+    float: left;
+    &__item{
+      width: 250px;
+      margin: 20px auto;
+    }
+  }
+  .best-offers__header {
+    padding-top: 0;
+  }
+  .best-offers__header h2 {
+    margin-left: 0;
+    line-height: inherit;
+    margin-top: 70px;
+  }
+  .best-offers__header h2:before {
+    font-size: 61px;
+    position: absolute;
+    top: 0;
+  }
+  .best-offers__header p {
+    margin-bottom: 0;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .best-offers__wrapper {
+    display: block;
+    width: 100%;
+    float: left;
+    &__item{
+      margin: 20px auto;
+      display: block;
+      position: relative;
+      h4{
+        padding: 20px 0 ;
+        display: block;
+      }
+    }
+  }
+  .footer__absolute-top {
+    display: none;
+  }
+  .footer__absolute{
+    display: none;
+  }
+  .footer__header {
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin-right: 0;
+    top: 0;
+  }
+  .footer {
+
+    height: auto;
+  }
+  .footer__header span {
+    line-height: inherit;
+    bottom: 0;
+    position: relative;
+    font-size: 30px;
+  }
+  .footer__header h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: inherit;
+  }
+  .footer__header form {
+    float: left;
+    input{
+      margin: 0 auto 20px auto;
+      display: block;
+    }
+    button{
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+  }
 }
 
 @media only screen and (max-width: 500px) {
