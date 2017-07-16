@@ -126,7 +126,7 @@ $(document).ready(function () {
         })
     });
     $( ".menu-link" ).click(function() {
-        $( ".header__nav__menu" ).slideToggle( "slow", function() {
+        $( ".header__navigation" ).slideToggle( "slow", function() {
         });
     });
 });
