@@ -7,7 +7,66 @@
 }
 
 @media only screen and (max-width: 770px) {
-	
+  body{
+    overflow-x: hidden;
+  }
+  .header{
+    height: auto;
+    &__text-m{
+      position: relative;
+    }
+  }
+  .popular-services__body__item img {
+    margin-bottom: 20px;
+  }
+  .real-work__header p {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .real-work__header h2 {
+      margin-bottom: 0;
+  }
+  .real-work__company__item{
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .best-offers__header h2, .best-offers__header h2:before {
+    margin-bottom: 0;
+  }
+  .best-offers__wrapper {
+    display: block;
+    float: left;
+    &__item{
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      h4{
+        padding-top: 20px;
+      }
+    }
+  }
+  .footer{
+    height: auto;
+  }
+  .footer__absolute-top {
+    display: none;
+  }
+  .popular-services__body__item {
+    height: auto;
+  }
+  .footer__absolute{
+    display: none;
+  }
+  .footer__header {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-right: 0;
+    top: 0;
+  }
+  .footer__header form {
+    padding-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 736px) {

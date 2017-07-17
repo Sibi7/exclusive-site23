@@ -101,7 +101,7 @@ $(document).ready(function () {
         }
     }
     //parallax mouse element top
-    var a = document.getElementsByClassName("header__absolute-top")[0];
+    var a = document.getElementsByClassName("header")[0];
     a.addEventListener("mousemove", function(event) {
         parallaxedTop(event);
 

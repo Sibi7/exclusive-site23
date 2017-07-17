@@ -6,6 +6,10 @@
   background: url("../img/footer/footer-bg2.png") no-repeat bottom center;
   height: 100vh;
   background-size: cover;
+  @include breakpoint(max-width 1366px){
+    background-position-y: 68%;
+  }
+
   background-color: #f5f6f8;
   &__absolute{
     display: block;
@@ -41,10 +45,10 @@
       color: #00101b;
       font-size: 37px;
       font-weight: 700;
-      line-height: 104px;
+      line-height: 89px;
       text-transform: uppercase;
       display: inline-block;
-      bottom: -41px;
+      bottom: -27px;
       position: relative;
     }
     h1{
@@ -53,7 +57,7 @@
       font-size: 84px;
       font-weight: 400;
       margin-top: 0;
-      line-height: 104px;
+      line-height: 89px;
       text-transform: uppercase;
       margin-bottom: 15px;
     }

@@ -9,16 +9,15 @@
  @include breakpoint(max-width 770px){
    background: url("../img/mobile-header-bg.png") no-repeat center top;
    background-size: cover;
-   //height: auto;
  }
   &__absolute-top {
     position: absolute;
     display: block;
     float: left;
-    width: 250px;
-    transition: .3s;
-    left: 33%;
-    top: 35%;
+    width: 200px;
+    transition: .2s;
+    left: 34%;
+    top: 100%;
     img {
       width: 100%;
       object-fit: contain;
